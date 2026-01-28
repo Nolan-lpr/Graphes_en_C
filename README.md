@@ -1,16 +1,19 @@
 # Graphes_en_C
-Projet en C sur les graphes orientés. 
+This is a C project on directed graphs. 
 
-Le but de ce projet est représenter les graphes orientés par matrices et par listes simplement chainées. Il s'agit, à partir d'un fichier d'entrée lu contenant une série de paires de nombres représentant ses arcs, de trouver : 
-- Les Composantes Fortements Connexes (CFC) du graph
-- Le représenter avec Graphviz après l'avoir convertit en fichier graph (.dot)
-- Trouver un chemin à partir d'un sommet particulier entrée par l'utilisateur
-- Déterminer la performance des 2 programmes par liste et par matrice à des fins d'optimisation.
+The goal of this project is to represent directed graphs using adjacency matrices and singly linked lists. 
 
-Explication d'utilisation : 
+Starting from an input file containing a series of number pairs representing the graph’s edges, the program must find :
+- Strongly Connected Components (SCCs) of the graph
+- represent the graph using Graphviz after converting it into a .dot file
+- find a path starting from a specific vertex provided by the user
+- evaluate the performance of the two implementations (list-based and matrix-based) for optimization purposes.
 
-./main_liste -start 0 -goal 16000 -o graphe1.dot -i graph_16498_PC-biogrid.txt
 
-OU 
+Usage example: 
 
-./main_matrice -start 0 -goal 16000 -o graphe1.dot -i graph_16498_PC-biogrid.tx
+./main_list -start 0 -goal 16000 -o graph1.dot  -i graph_16498_PC-biogrid.txt
+
+OR 
+
+./main_matrix -start 0 -goal 16000 -o graph1.dot  -i graph_16498_PC-biogrid.txt.
